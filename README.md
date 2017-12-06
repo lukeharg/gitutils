@@ -24,14 +24,25 @@ $ git commit -m "first commit"
 ### Link the repository to GitHub
 [Create a new repository](https://help.github.com/articles/creating-a-new-repository/) on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
 
-You can now link and push your repository to Github.
+You can now add your Github origin and push to it.
 ```bash
 $ git remote add origin https://github.com/luclabs/gitutils.git
 $ git push -u origin master
 ```
 
 ## Tutorials
-TODO: What is credential helper?
+### Adding changes
+```bash
+$ git add .
+$ git commit -m "My changes."
+$ git push
+```
+Note that the origin and branch don't need to be specified because the upstream was set (-u flag) in the previous push.
+
+### Pulling changes from Github
+```bash
+$ git pull
+```
 
 ## Best Practices
 - It is recommended every repository include a README, [LICENSE](https://choosealicense.com/), and .gitignore.
@@ -39,3 +50,4 @@ TODO: What is credential helper?
 ## Resources
 1. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 2. https://www.atlassian.com/git/tutorials/gitignore
+3. https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf
