@@ -21,6 +21,16 @@ $ echo "# gitutils" >> README.md
 $ git add README.md
 $ git commit -m "first commit"
 ```
+### Configure GitHub SSH
+[Create an SSH private key](https://gist.github.com/colinstein/8e1a0b12465561d71e91#doing-it-the-hard-way) and [configure GitHub to use it](https://help.github.com/en/enterprise/2.15/user/articles/adding-a-new-ssh-key-to-your-github-account).
+
+In ~/.ssh/config, add:
+```bash
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/example.pem
+```
 ### Link the repository to GitHub
 [Create a new repository](https://help.github.com/articles/creating-a-new-repository/) on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
 
