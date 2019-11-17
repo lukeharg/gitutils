@@ -31,6 +31,7 @@ Host github.com
   User git
   IdentityFile ~/.ssh/example.pem
 ```
+You can now [test to see if this has worked](https://help.github.com/en/github/authenticating-to-github/testing-your-ssh-connection).
 ### Link the repository to GitHub
 [Create a new repository](https://help.github.com/articles/creating-a-new-repository/) on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
 
