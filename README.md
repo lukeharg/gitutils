@@ -37,6 +37,11 @@ You can now [test to see if this has worked](https://help.github.com/en/github/a
 $ ssh -T git@github.com
 ```
 
+Finally you can add the ssh key to your agent on OSX with:
+```bash
+$ ssh-add -K ~/.ssh/example.pem
+```
+
 ### Link the repository to GitHub
 [Create a new repository](https://help.github.com/articles/creating-a-new-repository/) on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
 
